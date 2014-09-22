@@ -45,6 +45,15 @@
     <![endif]-->
     <div class="container">
       <div class="header">
+        <h1>Town Square <span class="break">New England</span></h1>
+        <p class="lead no-margin"><span class="glyphicon glyphicon-ok" style="margin-right:.25em;"></span>Discover the public document you're looking for.</p><p class="lead no-margin"><span class="glyphicon glyphicon-ok" style="margin-right:.25em;"></span>Find government records faster.</p> 
+      </div>
+      <div>
+                
+      </div>    
+    </div>
+    <div class="container">  
+      
       <nav class="navbar">
         <ul class="nav nav-pills">
           <li class="active"><a href="#">Home</a></li>
@@ -56,43 +65,40 @@
         </ul>
         </nav>
         <!-- <h3 class="text-muted">tsne</h3> -->
-      </div>
 
-      <div class="jumbotron">
-        <h1>Town Square<br>New England</h1>
-        <p class="lead">Discover the public document you're looking for.</p> 
-        <p class="lead">Find government records faster.</p>
-      </div>
+
       <div>
         <form action="#">
         <fieldset>
         <div class="well">
-        <h2>Search our database</h2>
-        <p>Enter the names of people or companies.</p>
-          <input style="width: 100%;border: 1px solid #ccc;" type="search" size="large" autofocus="autofocus" class="search__box" />
-        <button style="width:25%;margin:1em auto;display:block;" type="submit" class="btn btn-lg btn-default" href="#">SEARCH</button>
+        <h2><span class="glyphicon glyphicon-search" style="margin-right:.25em;"></span>Search our database</h2>
+        <p class="lead">Enter the names of people or companies.</p>
+          <input type="search" size="large" autofocus="autofocus" class="search__box" />
+        <div class="container-center">
+          <button  type="submit" class="btn btn-lg btn-success" href="#">SEARCH</button>
+        </div>
         </div>
         </fieldset>
         </form>
       </div>
 
-      <div class="row marketing">
+      <div>
       <div class="well">
-      <h2>Filter our data using the following options</h2>
+      <h2><span class="glyphicon glyphicon-filter" style="margin-right:.25em;"></span>Filter our data</h2>
       <div class="flex-container">
-      <div class="col-3">
-      <h4>Select a data set</h4>
-      <select>
+      <div class="col-3 form__elem-wrapper">
+      <label for="dataset" class="form__label-block">Select a data set</label>
+      <select name="dataset">
       <option value="">Choose one</option>
         <option value="dataset1">Dataset1</option>
         <option value="dataset2">Dataset2</option>
         <option value="dataset3">Dataset3</option>
         <option value="dataset4">Dataset4</option>
-      </select>  
+      </select> 
       </div>
-      <div class="col-3">       
-      <h4>Select a state</h4>
-        <select>
+      <div class="col-3 form__elem-wrapper">       
+      <label for="state" class="form__label-block">Select a state</label>
+        <select name="state">
           <option value="">Choose one</option>
           <option value="CT">Connecticut</option>
           <option value="ME">Maine</option>
@@ -102,9 +108,9 @@
           <option value="VT">Vermont</option>
         </select>
         </div>
-        <div class="col-3">
-      <h4>Select an industry</h4>
-        <select>
+        <div class="col-3 form__elem-wrapper">
+      <label for="industry" class="form__label-block">Select an industry</label>
+        <select name="industry">
           <option value="">Choose one</option>
           <option value="finance">Finance</option>
           <option value="education">Education</option>
@@ -114,20 +120,20 @@
         </select>
         </div>
         </div>
-        <h4>Select a date range:</h4>
         <div class="flex-container">
-          <div class="col-3">
+          <div class="col-3 form__elem-wrapper">
           <label for="start-date" class="form__label-block">Start date:</label><input type="date" id="start-date"/>
           </div>
-          <div class="col-3">
+          <div class="col-3 form__elem-wrapper">
           <label for="end-date" class="form__label-block">End date</label><input type="date" id="end-date" />
           </div>
-          <div class="col-3">
+          <div class="col-3 form__elem-wrapper">
           </div>
 
         </div>
-           <button style="width:25%;margin:1em auto;display:block;" type="submit" class="btn btn-lg btn-default" href="#">SEARCH</button>
-
+        <div class="container-center">
+           <button  type="submit" class="btn btn-lg btn-success" href="#">FILTER</button>
+          </div>
         </div>
           
       </div>

@@ -21,7 +21,10 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  color:#fff;
+  background-color:#0971B2;
+  padding:1em;
+  /* border-bottom: 1px solid #e5e5e5; */
 }
 
 /* Make the masthead heading the same height as the navigation */
@@ -63,6 +66,65 @@ body {
   margin-top: 28px;
 }
 
+.break {
+  display:block;
+}
+
+.container-center {
+  text-align:center;
+  margin-top:1em;
+}
+
+.well {
+  border:0;
+}
+.header {
+  margin-bottom:15px;
+  border-left: 20px solid #5bc0de;
+ 
+}
+
+.form__label-block {
+  display:block;
+}
+.form__elem-wrapper {
+  margin-bottom:1em;
+}
+
+.search__box {
+  border: 2px solid #f0ad4e;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.well > h2 {
+  border-bottom: 2px solid #0971B2;
+  text-align:center;
+  color:#0971B2;
+  text-transform:uppercase;
+  padding-bottom:.25em;
+}
+
+.no-margin {
+  margin:0;
+}
+
+label {
+  text-transform:uppercase;
+  color:#0971B2;
+}
+
+@media screen and (max-width:708px) {
+.nav-pills > li {
+  float:none;
+}
+}
+@media screen and (min-width:480px) {
+  .break {
+    display:inline;
+  }
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
@@ -73,8 +135,8 @@ body {
   .header,
   .marketing,
   .footer {
-    padding-left: 0;
-    padding-right: 0;
+    /* padding-left: 0;
+    padding-right: 0; */
   }
 
   /* Space out the masthead */

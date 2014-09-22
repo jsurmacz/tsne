@@ -146,25 +146,42 @@
     <script>
       $("#theGrid").bootgrid();
     </script>
-    <script>
+  <script>
+$.post( "http://api.openweathermap.org/data/2.5/forecast/daily?lat=35&lon=139&cnt=10&mode=json8dc04f7c61b6b6d5973f4404c853caaf", function( data ) {
+    console.log(data.list[0].weather[0].main);
+  });
+
+
+
+
+  </script>
+   <!--
+ <script>
    $("#grid-data").bootgrid({
     ajax: true,
     post: function ()
     {
+       
+
         /* To accumulate custom parameter with the request object */
         return {
-            id: "8dc04f7c61b6b6d5973f4404c853caaf"
+            id: "8dc04f7c61b6b6d5973f4404c853caaf",
+            "report": function(data){
+              console.log(data);
+            }
         };
     },
-    url: "http://api.openweathermap.org/data/2.5/forecast/daily?lat=35&lon=139&cnt=10&mode=json",
+    url: "http://api.openweathermap.org/data/2.5/forecast/daily?lat=35&lon=139&cnt=10&mode=json8dc04f7c61b6b6d5973f4404c853caaf",
     formatters: {
-        "link": function(column, row)
+
+        /* "link": function(column, row)
         {
             return "<a href=\"#\">" + column.id + ": " + row.id + "</a>";
-        }
+        }*/
     }
 });
-    </script>
+   $report();
+    </script> -->
 
         <!-- endbuild -->
 </body>
